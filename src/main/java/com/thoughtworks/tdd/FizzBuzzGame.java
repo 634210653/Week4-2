@@ -8,17 +8,14 @@ public class FizzBuzzGame {
     private FizzBuzz fizzBuzz = null;
     private int humanNumber = 0;
 
-    public FizzBuzzGame(FizzBuzz fizzBuzz,int humanNumber){
-        this.fizzBuzz = fizzBuzz;
-        this.specailNum = fizzBuzz.createSpecailNum(humanNumber);
+    public FizzBuzzGame(SpecailNumberCreator specailNumberCreator,int humanNumber){
+        this.fizzBuzz = new FizzBuzz(specailNumberCreator,humanNumber);
         this.humanNumber = humanNumber;
     }
 
     public void startGame(){
-
-        for(int i=0;i<humanNumber;i++){
-
+        for(int i=1;i<=humanNumber;i++){
+            System.out.println(fizzBuzz.getFizzBuzzResult(i));
         }
-
     }
 }
