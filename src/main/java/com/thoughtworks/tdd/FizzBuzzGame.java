@@ -1,7 +1,10 @@
 package com.thoughtworks.tdd;
 
 import java.util.List;
-
+/***
+ * author:LP
+ * time:2019.04.20
+ */
 public class FizzBuzzGame {
 
     private List<Integer> specailNum = null;
